@@ -16,3 +16,22 @@
 You can install this package **directly from GitHub** (no need for PyPI):  
 ```sh
 pip install git+https://github.com/yourusername/speech-to-text.git
+```
+
+## 🛠 Usage
+```python
+from stt_client import STTClient
+
+# Initialize with API endpoints
+stt = STTClient(
+    audio_conversion_url="https://api.example.com/convert",
+    stt_service_url="https://api.example.com/stt"
+)
+
+# Load an audio file
+with open("example_audio.mp3", "rb") as audio_file:
+    transcription = stt.process_audio(audio_file)
+
+print(transcription)  # Prints transcribed text
+
+```
