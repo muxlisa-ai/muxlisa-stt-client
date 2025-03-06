@@ -20,10 +20,10 @@ pip install git+https://github.com/yourusername/speech-to-text.git
 
 ## 🛠 Usage
 ```python
-from stt_client import STTClient
+from muxlisa_stt_client import SpeechToTextProcessor
 
 # Initialize with API endpoints
-stt = STTClient(
+stt = SpeechToTextProcessor(
     audio_conversion_url="https://api.example.com/convert",
     stt_service_url="https://api.example.com/stt"
 )
