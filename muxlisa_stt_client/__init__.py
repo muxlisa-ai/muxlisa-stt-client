@@ -1,4 +1,4 @@
 from .main import SpeechToTextProcessor
-import exceptions
+from . import exceptions
 
-__all__ = ["SpeechToTextProcessor"]
+__all__ = ["SpeechToTextProcessor", "exceptions"]
