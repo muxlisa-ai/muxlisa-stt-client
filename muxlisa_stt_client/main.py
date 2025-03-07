@@ -5,7 +5,7 @@ import requests
 
 from typing import Any
 
-from exceptions import AudioConversionError, AudioProcessingError, ZipExtractionError, TranscriptionError
+from .exceptions import AudioConversionError, AudioProcessingError, ZipExtractionError, TranscriptionError
 
 
 class SpeechToTextProcessor:
